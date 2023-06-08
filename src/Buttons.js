@@ -21,9 +21,11 @@ document.addEventListener(
             date: date,
             length_of_reservation: resLength,
             ts: ts,
+            visible: true,
         };
         setReservation(reservation);
         document.querySelector("#submission-form").reset();
+        document.dispatchEvent(new CustomEvent("stateChanged"))
     }
 )
 

@@ -1,6 +1,28 @@
 {
-  "clown": [],
-  "completedReservations": [],
+  "clowns": [
+    {
+      "id": 1,
+      "name": "Buttons"
+    },
+    {
+      "id": 2,
+      "name": "Lollipop"
+    }
+  ],
+  "completed_reservations": [
+    {
+      "reservation_id": "4",
+      "clown_id": "1",
+      "date_created": 1686253117049,
+      "id": 1
+    },
+    {
+      "reservation_id": "4",
+      "clown_id": "1",
+      "date_created": 1686253213325,
+      "id": 2
+    }
+  ],
   "reservations": [
     {
       "parent_name": "grace",
@@ -10,6 +32,7 @@
       "date": "2023-06-22",
       "length_of_reservation": "3",
       "ts": 1686241084880,
+      "visible": false,
       "id": 1
     },
     {
@@ -20,7 +43,30 @@
       "date": "2023-06-26",
       "length_of_reservation": "1",
       "ts": 1686241197926,
+      "visible": false,
       "id": 2
+    },
+    {
+      "parent_name": "dfgh",
+      "child_name": "sert",
+      "number_of_children": "23",
+      "address": "1234 address",
+      "date": "2023-06-29",
+      "length_of_reservation": "4",
+      "ts": 1686251206504,
+      "visible": false,
+      "id": 3
+    },
+    {
+      "parent_name": "fdsgerg",
+      "child_name": "asdfgasef",
+      "number_of_children": "342",
+      "address": "1234 address",
+      "date": "2023-06-22",
+      "length_of_reservation": "23",
+      "ts": 1686252368301,
+      "visible": false,
+      "id": 4
     }
   ]
 }

@@ -1,13 +1,19 @@
-import { fetchReservations } from '../api/dataAccess.js';
+import { fetchClowns, fetchReservations } from '../api/dataAccess.js';
 import { Buttons } from './Buttons.js';
 
-let main = document.querySelector("#main-container");
+const main = document.querySelector("#main-container");
+
+document.addEventListener(
+    "stateChanged",
+    customEvent => {
+        renderHtml();
+    }
+)
 
 const renderHtml = () => {
     fetchReservations()
-        .then(() => {
-            main.innerHTML = Buttons();
-        })
+        .then(() => fetchClowns())
+        .then(() => main.innerHTML = Buttons())
 };
 
 renderHtml(); 
