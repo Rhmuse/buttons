@@ -1,5 +1,26 @@
-{ 
-    "clown": [], 
-    "completedReservations": [], 
-    "reservations": [] 
+{
+  "clown": [],
+  "completedReservations": [],
+  "reservations": [
+    {
+      "parent_name": "grace",
+      "child_name": "dawn",
+      "number_of_children": "23",
+      "address": "1234 address",
+      "date": "2023-06-22",
+      "length_of_reservation": "3",
+      "ts": 1686241084880,
+      "id": 1
+    },
+    {
+      "parent_name": "grace",
+      "child_name": "sdfg",
+      "number_of_children": "23",
+      "address": "1234 address",
+      "date": "2023-06-26",
+      "length_of_reservation": "1",
+      "ts": 1686241197926,
+      "id": 2
+    }
+  ]
 }
